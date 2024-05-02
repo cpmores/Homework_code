@@ -1,0 +1,20 @@
+# Fdb version 4
+["xdvipdfmx"] 1714619882.19735 "test.xdv" "test.pdf" "test" 1714619882.32201 0
+  "test.xdv" 1714619882.18146 728 5ec2b3e17a59ae3f4aaf8eb9a31d461c "xelatex"
+  (generated)
+  "test.pdf"
+  (rewritten before read)
+["xelatex"] 1714619881.94908 "test.tex" "test.xdv" "test" 1714619882.32178 0
+  "/usr/share/texmf-dist/tex/latex/base/article.cls" 1713199481 20144 147463a6a579f4597269ef9565205cfe ""
+  "/usr/share/texmf-dist/tex/latex/base/size10.clo" 1713199481 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
+  "/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd" 1713199481 2430 fce77d7e103eb98b6c4d486ae1d466c0 ""
+  "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-xetex.def" 1713199481 31815 59e639f95c4a3bc971cad46c02998fac ""
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1713199481 41588 b43d3e860a4f94167ee1e725ff526a72 ""
+  "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1714618533 9578746 674397621920a54ac93797f0527daef9 ""
+  "test.aux" 1714619882.18146 32 3985256e7290058c681f74d7a3565a19 "xelatex"
+  "test.tex" 1714619881.01146 160 d3a1408feb0f47d8f37c108f57660648 ""
+  (generated)
+  "test.aux"
+  "test.log"
+  "test.xdv"
+  (rewritten before read)
