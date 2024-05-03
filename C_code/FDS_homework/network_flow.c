@@ -1,12 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <limits.h>
 
-#define MAX_PLANETS 500
-#define INF INT_MAX
+#define MAXN 501
 
-char name[MAX_PLANETS][4];
+char name[MAXN][4];
 
 int Find(char* x)
 {
@@ -25,16 +23,16 @@ int Find(char* x)
     ++num;
     strcat(name[num], x);
     return num;
-}
+}//fix not connected max N
 
 int min(int a, int b) {
     return a < b ? a : b;
 }
 
-int bfs(int n, int source, int destination, int capacity[MAX_PLANETS][MAX_PLANETS], int parent[])
+int bfs(int source, int destination, int graph[MAXN][MAXN], int parent[MAXN])
 {
-    int visited[MAX_PLANETS] = {0};
-    int queue[MAX_PLANETS];
+    int visited[MAXN] = {0};
+    int queue[MAXN];
     int front = 0, rear = 0;
     queue[rear++] = source;
     visited[source] = 1;
@@ -43,8 +41,8 @@ int bfs(int n, int source, int destination, int capacity[MAX_PLANETS][MAX_PLANET
     while (front < rear) 
     {
         int u = queue[front++];
-        for (int v = 0; v < n; v++) {
-            if (!visited[v] && capacity[u][v] > 0) 
+        for (int v = 0; v < MAXN; ++v) {
+            if (!visited[v] && graph[u][v] > 0) 
             {
                 queue[rear++] = v;
                 parent[v] = u;
@@ -55,52 +53,45 @@ int bfs(int n, int source, int destination, int capacity[MAX_PLANETS][MAX_PLANET
     return visited[destination];
 }
 
-int edmonds_karp(int n, int source, int destination, int capacity[MAX_PLANETS][MAX_PLANETS])
+int ek(int source, int destination, int graph[MAXN][MAXN])
 {
     int u, v;
-    int parent[MAX_PLANETS];
-    int max_flow = 0;
+    int parent[MAXN];
+    int flow = 0;
 
-    while (bfs(n, source, destination, capacity, parent)) 
+    while (bfs(source, destination, graph, parent)) 
     {
-        int path_flow = INF;
+        int path_flow = 10000;
         for (v = destination; v != source; v = parent[v]) 
         {
             u = parent[v];
-            path_flow = min(path_flow, capacity[u][v]);
+            path_flow = min(path_flow, graph[u][v]);
         }
         for (v = destination; v != source; v = parent[v]) 
         {
             u = parent[v];
-            capacity[u][v] -= path_flow;
-            capacity[v][u] += path_flow;
+            graph[u][v] -= path_flow;
+            graph[v][u] += path_flow;
         }
-        max_flow += path_flow;
+        flow += path_flow;
     }
-    return max_flow;
+    return flow;
 }
 
 int main() {
-    char source_planet[4], destination_planet[4];
+    char source[4], destination[4];
     int n;
-    int capacity[MAX_PLANETS][MAX_PLANETS] = {0};
+    int graph[MAXN][MAXN] = {0};
 
-    scanf("%s %s %d", source_planet, destination_planet, &n);
+    scanf("%s %s %d", source, destination, &n);
 
     for (int i = 0; i < n; i++) 
     {
-        char source_satellite[4], destination_satellite[4];
+        char source_a[4], destination_b[4];
         int cap;
-        scanf("%s %s %d", source_satellite, destination_satellite, &cap);
-        capacity[Find(source_satellite)][Find(destination_satellite)] += cap;
+        scanf("%s %s %d", source_a, destination_b, &cap);
+        graph[Find(source_a)][Find(destination_b)] += cap;
     }
-
-    int source = Find(source_planet);
-    int destination = Find(destination_planet);
-
-    int min_capacity = edmonds_karp(MAX_PLANETS, source, destination, capacity);
-    printf("%d\n", min_capacity);
-
+    printf("%d\n", ek(Find(source), Find(destination), graph));
     return 0;
 }
-
