@@ -8,16 +8,14 @@ int graph[MAXN][MAXN];
 //
 void input(int Ne, int graph[MAXN][MAXN])
 {
-    for(int i = 0; i < Ne; i++)
+    for(int i = 1; i <= Ne; i++)
     {
         int a, b, weight;
         scanf("%d%d%d", &a, &b, &weight);
         graph[a][b] = weight;
         graph[b][a] = weight;
-        graph[a][a] = 0;
-        graph[b][b] = 0;
     }
-}//input every edge and its weight 
+}//input every edge and its weight
 
 void input_seq(int K,int Nv, int seq[100][MAXN])
 {
@@ -30,7 +28,7 @@ void check_update(int index, int Nv, int vert[MAXN][2], int graph[MAXN][MAXN])
 {
     for(int i = 1; i <= Nv; ++i)
     {
-        if(graph[index][i])
+        if(graph[index][i] && vert[i][0] == 0)
         {
             if(vert[index][1] + graph[index][i] < vert[i][1])
             {
@@ -65,10 +63,10 @@ int main()
 
     scanf("%d%d", &Nv, &Ne);
     input( Ne, graph);
-    
+
     scanf("%d", &K);
     input_seq(K, Nv, seq);
-     
+
     for(int i = 0; i < K; ++i)
     {
         // for every seq
@@ -96,12 +94,13 @@ int main()
             }
         }
         if(flag)
-        {   
+        {
             printf("No\n");
         }
-        else 
+        else
         {
             printf("Yes\n");
         }
     }
 }
+
