@@ -1,0 +1,39 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: G:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_flipflop_behav xil_defaultlib.tb_flipflop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/circuit/ms_sr_flip_flop.v" Line 9. Module ms_sr_flip_flop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/circuit/C_D_latch.v" Line 9. Module C_D_latch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/circuit/C_D_latch.v" Line 9. Module C_D_latch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/circuit/ms_sr_flip_flop.v" Line 9. Module ms_sr_flip_flop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/circuit/C_D_latch.v" Line 9. Module C_D_latch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/circuit/C_D_latch.v" Line 9. Module C_D_latch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" Line 9. Module NAND_GATE(BubblesMask=65'b0) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NAND_GATE(BubblesMask=65'b0)
+Compiling module xil_defaultlib.C_D_latch
+Compiling module xil_defaultlib.ms_sr_flip_flop
+Compiling module xil_defaultlib.tb_flipflop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_flipflop_behav

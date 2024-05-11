@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/srlatch/SR_latch/verilog/gates/NOR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/srlatch/SR_latch/verilog/circuit/SR_latch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SR_latch
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/@home/cpmores/git_code/Vivado_project/lab9/sr_latch/project_1/project_1.srcs/sim_1/new/tb_srlatch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_srlatch

@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/circuit/C_D_latch.v" \
+"../../../../../../../convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v" \
+"../../../../../../../convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/circuit/ms_sr_flip_flop.v" \
+"../../../../project_2.srcs/sim_1/new/tb_flipflop.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

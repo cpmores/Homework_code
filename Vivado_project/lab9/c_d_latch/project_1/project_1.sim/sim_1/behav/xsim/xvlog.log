@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/cdlatch/C_D_latch/verilog/circuit/C_D_latch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module C_D_latch
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/cdlatch/C_D_latch/verilog/gates/NAND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NAND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/@home/cpmores/git_code/Vivado_project/lab9/c_d_latch/project_1/project_1.srcs/sim_1/new/tb_cdlatch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cdlatch
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/@home/cpmores/git_code/Vivado_project/lab9/c_d_latch/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

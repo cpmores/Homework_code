@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/csrlatch/C_SR_latch/verilog/circuit/C_SR_latch.v,1715238105,verilog,,F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/csrlatch/C_SR_latch/verilog/gates/NAND_GATE.v,,C_SR_latch,,,,,,,,
+F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/csrlatch/C_SR_latch/verilog/gates/NAND_GATE.v,1715238105,verilog,,F:/@home/cpmores/git_code/Vivado_project/lab9/c_sr_latch/project_2/project_2.srcs/sim_1/new/tb_csr.v,,NAND_GATE,,,,,,,,
+F:/@home/cpmores/git_code/Vivado_project/lab9/c_sr_latch/project_2/project_2.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+F:/@home/cpmores/git_code/Vivado_project/lab9/c_sr_latch/project_2/project_2.srcs/sim_1/new/tb_csr.v,1715239333,verilog,,,,tb_csr,,,,,,,,

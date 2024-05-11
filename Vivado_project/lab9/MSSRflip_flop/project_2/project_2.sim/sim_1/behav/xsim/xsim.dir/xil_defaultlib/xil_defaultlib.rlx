@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/circuit/C_D_latch.v,1715244314,verilog,,F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v,,C_D_latch,,,,,,,,
+F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/circuit/ms_sr_flip_flop.v,1715244314,verilog,,F:/@home/cpmores/git_code/Vivado_project/lab9/MSSRflip_flop/project_2/project_2.srcs/sim_1/new/tb_flipflop.v,,ms_sr_flip_flop,,,,,,,,
+F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/gates/NAND_GATE.v,1715244314,verilog,,F:/@home/cpmores/git_code/Vivado_project/convert_Verilog/MS_SR_flip_flop/cdlatch/ms_sr_flip_flop/verilog/circuit/ms_sr_flip_flop.v,,NAND_GATE,,,,,,,,
+F:/@home/cpmores/git_code/Vivado_project/lab9/MSSRflip_flop/project_2/project_2.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+F:/@home/cpmores/git_code/Vivado_project/lab9/MSSRflip_flop/project_2/project_2.srcs/sim_1/new/tb_flipflop.v,1715245466,verilog,,,,tb_flipflop,,,,,,,,

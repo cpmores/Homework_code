@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../convert_Verilog/cdlatch/C_D_latch/verilog/circuit/C_D_latch.v" \
+"../../../../../../../convert_Verilog/cdlatch/C_D_latch/verilog/gates/NAND_GATE.v" \
+"../../../../project_1.srcs/sim_1/new/tb_cdlatch.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
