@@ -31,7 +31,7 @@ Sort by 5, 3, 1.
 
 + Find the top node, and maintain the heap.
 
-### 6. Mergesort
+## 6. Mergesort
 
 + Divide one to two lists
 
@@ -41,7 +41,7 @@ Sort by 5, 3, 1.
   
   + functions: Msort, Merge $T(N)=O(NlogN)$
 
-### 7. Quicksort
+## 7. Quicksort
 
 + use two pointers
 
