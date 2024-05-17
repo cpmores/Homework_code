@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="04E228F3-9C30-448D-A59A-8BD750DE835F">
+            <Title>About</Title>
+            <Text>CHICAGO STYLE ESSAY TEMPLATE
+About This Template
+This template is designed to produce an essay in the Chicago Style format. However, you should check the exact guidelines of the institution to which you are submitting your essay, because formatting expectations can vary (such as whether there should be a separate title page, whether footnotes should appear at the end of each page or as endnotes, and so on). See “Making Changes” below for information on how to tweak your project to meet different requirements.
+How To Use This Template
+Edit the “Title Page” document in within the “Front Matter” folder so that it contains the title of your essay, your instructor’s name and so on. If you don’t require a separate title page but instead need the title and course information as the header of the first page, edit the “First Page Header” document.
+
+Compose your essay in text documents inside the &quot;Essay” folder (this is referred to as the “Draft folder” in the documentation; it’s just been renamed in this template). Whether you use a single document or multiple text files to write your essay is entirely up to you—just make sure they are all inside the “Essay folder.
+
+Indent block quotes or other special passages using styles. For instance, to add a block quote, choose “Block Quote” from the Format &gt; Style menu (or from the styles button in the format bar).
+
+You can add footnotes to your text using inline (Insert &gt; Inline Footnote) or inspector footnotes (Insert &gt; Footnote). These can optionally be treated as endnotes in your compiled document. If your paper requires both footnotes and endnotes, use one type for footnotes and one for endnotes. See the Endnotes section below for how to include endnotes.
+
+Edit the “Works Cited” document in the binder so that it contains your own bibliography, being careful to adhere to the Chicago Manual of Style for the citation system. The document title will be used as the section header, so rename it to “Bibliography” or “References” as necessary. If you do not require a “Works Cited” page, either delete this document or exclude it from the compile group by deselecting its “Include in Compile” setting in the inspector or compile window. You can also simply untick “Add back matter” in the compile window (or select only the “Notes” document from the dropdown beside the “Add back matter” setting, if you require endnotes).
+Tables and Figures
+If you need to use tables or figures in your essay, you can label them using the following tags, replacing “KEYWORD” with a unique word that identifies your table or figure.
+
+!fig(KEYWORD)
+!table(KEYWORD)
+
+These tags will be replaced with numbers in the compiled document, with the numbering stream for figures being separate from the numbering stream for tables.
+
+You can refer to such tags as follows:
+
+#fig(KEYWORD)
+#table(KEYWORD)
+
+Here’s an example:
+
+Table !table(sales): Sales 2011
+Table !table(dates): Shipment dates
+Figure !fig(skeleton): The skeleton of the gnu.
+Figure !fig(malcolmreynolds): The second coolest character in Firefly.
+
+… (For sales figures, see table #table(sales))… For shipment dates, see table #table(dates)… where he discovered the skeleton of a gnarled gnu (see figure #fig(skeleton))… Chronicles providing a similar role, albeit without the Castle actor (see figure #fig(malcolmreynolds)).
+
+In the compiled document, the above text would look like this:
+
+Table 1: Sales 2011
+Table 2: Shipment dates
+Figure 1: The skeleton of the gnu.
+Figure 2: The second coolest character in Firefly.
+
+… (For sales figures, see table 1)… For shipment dates, see table 2… where he discovered the skeleton of a gnarled gnu (see figure 1)… Chronicles providing a similar role, albeit without the Castle actor (see figure 2).
+
+To preserve the correct indentation and spacing in the compiled document, apply the “Figure” style (Format &gt; Style &gt; Figure) to inserted images (or the placeholder text used to insert them during compile). Use Format &gt; Style &gt; Caption to format caption text for figures. When compiled, this text will be left-aligned with no indent and single-spaced and will be separated from the following text with an empty line.
+Endnotes
+This template is set up to compile end-of-page footnotes. If your paper style requires endnotes rather than or in addition to footnotes, you will need to adjust a few settings. In File &gt; Compile… click the gear icon in the rightmost header bar and tick the appropriate option to export either (or both) inspector footnotes or inline footnotes as endnotes. Return to the compile contents list via the leftmost icon in the header bar.
+To compile only endnotes: use the “Chicago Essay” compile format and include the “Notes” document in the compile group by clicking into the dropdown menu beside “Add back matter” and selecting the entire “Back Matter” folder. (If you do not need the works cited page, instead select only the “Notes” document.)
+
+If you are compiling to a file format such as RTF or DOCX, the endnotes will be placed at the end of the full text in word processors that support true footnotes, rather than following the “Notes” header. You can edit their placement in the word processor, or you can convert them to regular text during the compile process so they are printed in the correct location. To do this:
+Double-click the “Chicago Essay” compile format to edit it.
+Click on “Compatibility” at the bottom of the list In the left sidebar. (If this is not visible, click into the dropdown menu at the top of the sidebar and choose RTF.)
+Deselect “Flatten footnotes and comments into regular text” and click Save.
+To compile both footnotes and endnotes: select the “Chicago Essay (Endnotes+Footnotes)” compile format. This is set up with “Add back matter” enabled and the complete “Back Matter” folder selected; use the dropdown menu to change it to only “Notes” if you do not need the works cited page.
+
+If you are compiling to the RTF, DOC, DOCX or ODT file format, click “Assign Section Layouts…” at the bottom-centre of the compile dialog. From the Section Types list on the left, select “Endnotes”, and change the assignment on the right to “Endnotes (Word-Compatible)”. Click OK to save the settings.
+
+For these formats, the endnotes will not be collected at the “Notes” page but always placed at the end of the complete text. After compiling, follow the guidance from your word processor to reposition the endnotes to the end of the section (rather than the end of the document), which will place them on the blank “Notes” page, and to remove the endnotes separator.
+Compiling
+Go to File &gt; Compile…
+Ensure the “Chicago Essay” format is selected in the list of formats on the left of the compile window.
+Fill in information such as author and title in the metadata tab (click on the tag icon in the rightmost header bar of the compile window).
+If you wish inline or inspector footnotes to be exported as endnotes, follow the steps in Endnotes, above, to adjust the compile settings as needed.
+Click “Compile”.
+Making Changes
+First page header: This template is set up to compile your essay with a separate title page. If you instead need the title and course information on the first page of text, fill out the “First Page Header” document within the “Front Matter” folder. When you compile, ensure the box to “Add front matter” is ticked below the contents list in the rightmost section of the window and click the dropdown menu to select “First Page Header” instead of “Title Page”.
+Font: This template uses Times New Roman as the font. If you require a different font, such as Arial or Courier New, in the compile window, simply change the “Font” setting at the top of the “Section Layouts” pane.
+Bibliography or References: If you require a bibliography or references page rather than works cited, simply rename the “Works Cited” document in the binder. The title will be used at the top of the section when compiled.
+Superscript footnote markers: When compiled using the “Chicago Essay” format, note numbers in the footnotes or endnotes will use a full-size Arabic numeral followed by a period. If you require superscripted numerals in the notes themselves, double-click on the “Chicago Essay” format in the compile window to open the compile format designer. Select “Footnotes &amp; Comments” from the sidebar, then untick the checkbox to “Use period and space style instead of superscript in markers” and click Save.
+
+The “Chicago Essay (Endnotes+Footnotes)” compile format uses symbols (beginning with *) for footnotes and Arabic numerals for endnotes. Both are superscripted.
+Sample Document
+The “Example Essay” PDF in the Research folder shows how the essay will look when compiled.
+Final Note
+Scrivener project templates are flexible and are not intended to restrict you to a particular workflow. You can change, delete or move the files and folders contained in the template to suit how you work.
+
+Like all templates in Scrivener, this project was originally created from the “Blank” template. We’ve simply added a few folders and set everything up in ways that should be useful to students. Everything you can do with this project, you could equally do by creating a “Blank” project and setting it up yourself.
+
+You can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File &gt; Save As Template…</Text>
+        </Document>
+        <Document ID="1F5B37DF-8E13-49BA-AD8E-699834F43979">
+            <Title>Back Matter</Title>
+        </Document>
+        <Document ID="24821DCE-8C25-459B-B894-C1489F222C7B">
+            <Title>Essay Body</Title>
+        </Document>
+        <Document ID="274A2551-9645-46D2-8C3D-80D1CEC94D7A">
+            <Title>Works Cited</Title>
+            <Text>Works cited should go here (this page is optional). Refer to the Chicago Manual of Style and online resources for proper citations in the Author-Date or Notes-Bibliography system, and be sure to check with your institution’s particular requirements. When compiled, a blank line will be added between each entry, per the CMOS guidelines, so you should not enter one manually.
+Rename this document to “References” or “Bibliography” as your particular citation system requires.</Text>
+        </Document>
+        <Document ID="36F1479F-D769-45B2-BDAE-7AA1C1A0160C">
+            <Title>Ideas</Title>
+        </Document>
+        <Document ID="54DA639B-99B8-461A-B418-E1F374F3B4BD">
+            <Title>Notes</Title>
+            <Text>&lt;$--ENDNOTES--&gt;</Text>
+        </Document>
+        <Document ID="5D49D674-E116-4B7A-AB75-D381654DF253">
+            <Title>First Page Header</Title>
+            <Text>&lt;$fullname&gt;
+Instructor name
+Course title
+&lt;$longdate&gt;
+&lt;$projecttitle&gt;</Text>
+            <Notes>The &lt;$projecttitle&gt; and &lt;$fullname&gt; tags get replaced with metadata information you can set when compiling. &lt;$longdate&gt; will be replaced with the current date formatted according to the Windows system “Long Date” format. 
+
+Edit the text of the first page header as required.</Notes>
+        </Document>
+        <Document ID="7F7412E7-00A2-43BB-920A-617F564442B4">
+            <Title>Notes</Title>
+        </Document>
+        <Document ID="8E30FCF9-6BCF-43DD-82AA-A04CD8F84B92">
+            <Title>Title Page</Title>
+            <Text>
+
+
+
+
+
+
+&lt;$projecttitle&gt;
+
+
+
+
+
+
+
+
+&lt;$fullname&gt;
+Course Title
+Instructor’s Name
+&lt;$longdate&gt;
+</Text>
+            <Notes>The &lt;$projecttitle&gt; and &lt;$fullname&gt; tags get replaced with metadata information you can set when compiling. &lt;$longdate&gt; will be replaced with the current date formatted according to the Windows system “Long Date” format. 
+
+Edit the text of the title page as required.</Notes>
+        </Document>
+        <Document ID="8EC979C1-7867-4CF5-8186-5533CB718448">
+            <Title>Front Matter</Title>
+        </Document>
+        <Document ID="B3DCD080-9940-4AB1-BD20-FC3024CB8F06">
+            <Title>Example Essay</Title>
+        </Document>
+    </Documents>
+</SearchIndexes>
