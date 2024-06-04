@@ -1,5 +1,4 @@
-//in this section, we will complement breadth first search using queue, which means first in and first out.
-#include <stdio.h> 
+#include <stdio.h>
 #include <stdlib.h>
 
 #define MAXN 1000
@@ -11,12 +10,11 @@ typedef struct Node
   struct Node* lkid;
   struct Node* rkid;
 }*tree;
-typedef struct Queue
+typedef struct Stack
 {
-  int head;
-  int rear;
+  int top;
   tree arr[MAXN];
-}*queue;
+}*stack;
 //this function is to used to build a tree
 void addNew(int value, tree T, int check)
 {
@@ -53,43 +51,46 @@ tree addedge(int par)
   }
   return T;
 }
-void q_init(queue Q)
+void s_init(stack Q)
 {
-  Q -> head = 0;
-  Q -> rear = 0;
+  Q -> top = 0;
 }
 
-void q_push(queue Q, tree N)
+void s_push(stack Q, tree N)
 {
-  Q -> arr[Q -> rear++] = N;
+  Q -> arr[Q -> top++] = N;
 }
 
-tree q_pop(queue Q)
+tree s_pop(stack Q)
 {
-  return Q -> arr[Q -> head++];
+  Q -> top--;
+  return Q -> arr[Q -> top];
 }
 
-int q_check(queue Q)
+int s_check(stack Q)
 {
-  if (Q -> rear == Q -> head && Q -> head)
+  if (!Q -> top)
     return 1;
   return 0;
 }
 int main()
 {
   tree root = addedge(20);
-  queue Q = (queue)malloc(sizeof(struct Queue));
-  q_init(Q);
-  q_push(Q, root);
-  while(!q_check(Q))
+  stack Q = (stack)malloc(sizeof(struct Stack));
+  s_init(Q);
+  s_push(Q, root);
+  while(!s_check(Q))
   {
-    if(Q -> arr[Q -> head] -> lkid)
-      q_push(Q, Q -> arr[Q -> head] -> lkid);
-    if(Q -> arr[Q -> head] -> rkid)
-      q_push(Q, Q -> arr[Q -> head] -> rkid);
-    tree tmp = q_pop(Q);
+    tree tmp = s_pop(Q);
+    if(tmp -> lkid)
+      s_push(Q, tmp -> lkid);
+    if(tmp -> rkid)
+      s_push(Q, tmp -> rkid);
     printf("%d ", tmp -> value);
+    free(tmp);
   }
   free(Q);
   return 0;
 }
+
+
