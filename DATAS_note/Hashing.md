@@ -10,7 +10,7 @@
 
 + Easy to compute and minimizes the number of collisions.
 + usually used : $f(x)=x$% Table_size (Table_size is a prime)
-+ $f(x)=(x[0]+x[1]*27+x[2]*27^2)$​%Table_size
++ $f(x)=(x[0]+x[1]*27+x[2]*27^2)$%Table_size
 
 ## 3. Separate Chaining
 
@@ -23,3 +23,16 @@ typedef struct ListNode *Position
 struct Hashtable
 ```
 
+## 4. Opening Addressing
+
++ If the address is occupied, then check the next position.
+
+## 5. Double Hashing
+
++ $f(i)=i*hash_2(x)$​
++ Hashing twice
+
+## 6. Rehashing
+
++ Build another table that is about twice as big.
++ Use a new function to hash those elements into a new table.
