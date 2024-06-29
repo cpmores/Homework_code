@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define MAXN 100000
+typedef struct node {
+  int value;
+  struct node *next;
+  int reptimes;
+} *Node;
+typedef struct hisarr {
+  int times;
+  int size;
+  Node head;
+  Node tail;
+} *Hisarr;
+void Cac_push(Hisarr arr, Node check[], int value) {
+  if (check[value]) {
+
+  } else if (check[value]->value) {
+    Node p = arr->head;
+    Node pre = arr->head;
+    while (p->value != value && p) {
+      pre = p;
+      p = p->next;
+    }
+    pre->next = p->next;
+    p->next = NULL;
+    arr->tail->next = p;
+    arr->tail = p;
+  } else if (!check[value]->value) {
+  }
+}
+int main() {
+  int K, N, M;
+  Node check_His[MAXN] = {0};
+  Node check_Cac[MAXN] = {0};
+  scanf("%d%d%d", &K, &N, &M);
+  for (int i = 0; i < M; ++i) {
+  }
+}
